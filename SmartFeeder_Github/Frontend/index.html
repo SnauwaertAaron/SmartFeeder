@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SmartFeeder</title>
+    <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://use.typekit.net/owf5yrk.css">
+    <script src="script/app.js"></script>
+    <script src="script/dataHandler.js"></script>
+  </head>
+  <body >
+    <header class="o-row">
+      <div class="o-container">
+        <h1>Feeder Rex</h1>
+        <h3 class="js-portie">Laatste voedermoment: --/--/---- --:--</h3>
+      </div>
+
+    </header>
+
+    <section class="o-row">
+      <div class="o-container">
+        <div class="o-layout o-layout-topspace-lg">
+          <div class="o-layout__item u-1-of-2">
+            <img src="img/Eat.png">
+            <h4 class="js-voeding">--%</h4>
+          </div>
+          <div class="o-layout__item u-1-of-2">
+            <img src="img/Drink.png">
+            <h4 class="js-water">--%</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="o-row o-row--lastrow">
+        <div class="o-container o-container-center">
+          <div class="o-layout-topspace-lg">
+            <button class="button button1"><b>Voeder nu</b></button>
+          </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="o-container o-container-float">
+        <div class="c-nav">
+          <ul class="o-list c-nav__list">
+            <li class="c-nav__item">
+              <a href="index.html" class="c-nav__link">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 24 24" width="50"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                <div class="c-nav__link c-nav__link-text">Home</div>
+              </a>
+            </li>
+            <li class="c-nav__item">
+              <a href="Planning.html" class="c-nav__link">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 24 24" width="50"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <div class="c-nav__link c-nav__link-text">Planning</div>
+              </a>
+            </li>
+            <li class="c-nav__item">
+              <a href="Overzicht.html" class="c-nav__link">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40"  viewBox="0 0 24 24" width="50"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+                <div class="c-nav__link c-nav__link-text">Overzicht</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>

@@ -1,0 +1,1103 @@
+/*------------------------------------*\
+  #GENERIC
+\*------------------------------------*/
+
+/*
+    Generic: Page
+    ---
+    Global page styles + universal box-sizing:
+*/
+
+html {
+    font-size: 15px;
+    line-height: 22.5px;
+    /* font-weight: 200px; */
+    color: #293241;
+    /* background-color: #98c1d9; */
+    font-family: interstate, sans-serif;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* overflow-x: hidden; */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #FD714F;
+    color: white;
+    text-shadow: none;
+}
+
+::selection {
+    background: #FD714F;
+    color: white;
+    text-shadow: none;
+}
+
+/*------------------------------------*\
+  #Elements
+\*------------------------------------*/
+
+/*
+    Elements: Buttons
+    ---
+    Default markup for buttons to make them responsive
+*/
+
+.button{
+    color: #293241;
+    background-color: #FD714F; 
+    border-radius: 10px;
+    border-style: none;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.button1{
+    font-size: 30px;
+    padding: 0.3em;
+}
+
+.button2{
+    font-size: 17px;
+    padding: 0.3em;
+}
+
+
+/*
+    Elements: Images
+    ---
+    Default markup for images to make them responsive
+*/
+
+input[type=time]{
+    width: 20em;
+    height: 1.5em;
+    Font-family: interstate;
+    color: #293241;
+    margin-left: 0.8em;
+}
+input[type=number]{
+    width: 20em;
+    height: 1.5em;
+    Font-family: interstate;
+    color: #293241;
+    margin-left: 0.8em;
+}
+
+
+/*
+    Elements: Images
+    ---
+    Default markup for images to make them responsive
+*/
+
+img {
+    height: 125px;
+    margin-top: 2.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+    Elements: typography
+    ---
+    Default markup for typographic elements
+*/
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    text-align: center;
+}
+
+h1 {
+    font-size: 35px;
+    line-height: 52.5px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin:0px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 0px;
+}
+
+h4{
+    font-size: 42px;
+    line-height: 63px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-left: 0.6em;
+}
+
+h5{
+    font-size: 25px;
+    line-height: 37.5px;
+    text-align: center;
+    padding-top: 0.25em ;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+h6 {
+    font-size: 28px;
+    line-height: 42px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    /* padding-left: 0.5em; */
+    text-align: left;
+}
+
+/*
+    Elements: table
+    ---
+    Default markup for tables
+*/
+
+table{
+    margin: auto;
+    text-align: left;
+    margin-bottom: 30em;
+}
+
+table td{
+    font-size: 35px;
+    line-height: 52.5px;
+    width: 50%;
+    text-align: left !important;
+    max-width: 25%;
+    padding-left:0em;
+    border-bottom: 0.5px solid #293241;
+}
+
+p,
+ol,
+ul,
+dl,
+address,
+figure {
+    margin: 0 0 24px;
+}
+
+ul,
+ol {
+    padding-left: 24px;
+}
+
+
+li ul,
+li ol {
+    margin-bottom: 0;
+}
+
+blockquote {
+    font-style: normal;
+    font-size: 23px;
+    line-height: 32px;
+    margin: 0 0 24px;
+}
+
+blockquote * {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+figcaption {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 8px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: LightGrey;
+    margin: 0 0 24px;
+}
+
+a {
+    color: #1195F7;
+    transition: all .1s ease-in-out;
+}
+
+a:visited,
+a:active,
+a:hover,
+a:focus {
+    color: #8EC7FF;
+}
+
+/*------------------------------------*\
+  #OBJECTS
+\*------------------------------------*/
+
+/*
+    Objects: Row
+    ---
+    Creates a horizontal row that stretches the viewport and adds padding around children
+*/
+/* size modifiers */
+
+.o-row {
+    position: relative;
+    padding: 24px 24px 0;
+    margin: -1px;
+    display: flow-root;
+    background-color: white;
+}
+
+.o-row--lastrow{
+    /* margin-bottom:2em; */
+}
+
+/* size modifiers */
+
+.o-row--lg {
+    padding: 48px 24px 24px;
+}
+
+@media (min-width: 768px) {
+    .o-row {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+    .o-row--md {
+        padding-top: 48px;
+        padding-bottom: 24px;
+    }
+
+    .o-row--lg {
+        padding-top: 72px;
+        padding-bottom: 48px;
+    }
+}
+
+/*
+    Objects: Container
+    ---
+    Creates a horizontal container that sets de global max-width
+*/
+
+.o-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30em;
+    padding-left: 1.7em;
+    padding-right: 1.7em;
+}
+
+.o-container__no-margin{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.o-container-header{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.7em;
+    padding-right: 1.7em;
+}
+
+.o-container-small{
+    max-width: 25%;
+}
+
+.o-container-center{
+    text-align: center;
+}
+
+/*
+    Objects: section
+    ---
+    Creates vertical whitespace between adjacent sections inside a row
+*/
+
+.o-section {
+    display: flow-root; /* New solution! Fixes margin collapsing */
+}
+
+.o-section + .o-section {
+    margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+    .o-section--lg + .o-section--lg,
+    .o-section--xl + .o-section--xl {
+        margin-top: 48px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .o-section--xl + .o-section--xl {
+        margin-top: 72px;
+    }
+}
+
+/*
+    Objects: Layout
+    ---
+    The layout object provides us with a column-style layout system. This object
+    contains the basic structural elements, but classes should be complemented
+    with width utilities
+*/
+
+.o-layout {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .o-layout__item {
+        flex-basis: 100%;
+    }
+
+    .o-layout__item-small {
+        flex-basis: 100%;
+        padding: 1em;
+    }
+
+    .o-layout__item-padding{
+        padding-left: 0.5em;
+    }
+
+.o-layout-topspace-sm{
+    margin-top: 2em;
+}
+
+.o-layout-topspace-lg{
+ margin-top: 6em;
+}
+
+.o-layout-line{
+    border-bottom: 0.5px solid #293241;
+}
+
+/* gutter modifiers, these affect o-layout__item too */
+
+.o-layout--gutter {
+    margin: 0 -12px;
+}
+
+.o-layout--gutter > .o-layout__item {
+    padding: 0 12px;
+}
+
+.o-layout--gutter-sm {
+    margin: 0 -6px;
+}
+
+.o-layout--gutter-sm > .o-layout__item {
+    padding: 0 6px;
+}
+
+.o-layout--gutter-lg {
+    margin: 0 -24px;
+}
+
+.o-layout--gutter-lg > .o-layout__item {
+    padding: 0 24px;
+}
+
+/* reverse horizontal row modifier */
+
+.o-layout--row-reverse {
+    flex-direction: row-reverse;
+}
+
+/* Horizontal alignment modifiers*/
+
+.o-layout--justify-start {
+    justify-content: flex-start;
+}
+
+.o-layout--justify-end {
+    justify-content: flex-end;
+}
+
+.o-layout--justify-center {
+    justify-content: center;
+}
+
+.o-layout--justify-space-around {
+    justify-content: space-around;
+}
+
+.o-layout--justify-space-evenly {
+    justify-content: space-evenly;
+}
+
+.o-layout--justify-space-between {
+    justify-content: space-between;
+}
+
+/* Vertical alignment modifiers */
+
+.o-layout--align-start {
+    align-items: flex-start;
+}
+
+.o-layout--align-end {
+    align-items: flex-end;
+}
+
+.o-layout--align-center {
+    align-items: center;
+}
+
+.o-layout--align-baseline {
+    align-items: baseline;
+}
+
+/* Vertical alignment modifiers that only work if there is one than one flex item */
+
+.o-layout--align-content-start {
+    align-content: start;
+}
+
+.o-layout--align-content-end {
+    align-content: end;
+}
+
+.o-layout--align-content-center {
+    align-content: center;
+}
+
+.o-layout--align-content-space-around {
+    align-content: space-around;
+}
+
+.o-layout--align-content-space-between {
+    align-content: space-between;
+}
+
+
+
+/*
+    Components: calc
+    ---
+    Special properties of calculation boxes
+*/
+.c-calculation{
+    background-color: #98c1d9;
+    border-radius: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/*
+    Components: label
+    ---
+    Special properties of label
+*/
+.c-label{
+    font-size: 35px;
+    line-height: 52.5px;
+    text-align: center;
+    padding-top: 0.25em ;
+    padding-left: 0.4em;
+    margin-block-start: 0px;
+    margin-block-end: 0px;  
+}
+
+
+/*
+    Components: table
+    ---
+    Special properties of table
+*/
+
+.c-table-content{
+    text-align: left;
+    padding-left: 0.5em;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.c-table-delete{
+    padding:0.5em;
+}
+
+/*
+    Components: head
+    ---
+    Special properties of h1 in header
+*/
+
+.c-head__h1{
+    display: flex;
+    margin: auto;
+}
+
+
+/*
+    Components: svg
+    ---
+    Special properties of svg "+"
+*/
+.c-svg__button{
+    display: inline;
+    margin: auto;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+/*
+    Components: Navigation
+    ---
+    Main navigation of the website
+*/
+
+.c-nav {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: auto;
+    background-color: #98c1d9;
+    position: fixed;
+    bottom: 1.5em;
+    left: 0;
+    width: 100%;
+    height: 3em;
+}
+
+.c-nav__item{
+    width: 100%;
+    margin-right: 0px;
+    position: relative;
+    display: block;
+    background-color: #98c1d9;
+    padding-top: 0.5em;
+}
+
+.bc{
+    background-color: #98c1d9;
+}
+
+.c-nav__link {
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+    background-color: #98c1d9;
+    width: 100%;
+}
+
+.c-nav__link-text{
+    margin-bottom: 0.5em;
+}
+
+.c-nav__link:hover,
+.c-nav__link:focus {
+    color: #293241;
+    text-shadow: 0 0 8px;
+}
+
+.c-nav__link,
+.c-nav__link:visited,
+.c-nav__link:active {
+    color: #293241;
+}
+
+@media (min-width: 768px) {
+    .c-nav__list {
+        display: flex;
+        align-items: center;
+    }
+
+    .c-nav__link {
+        padding: 12px 16px;
+    }
+}
+
+
+
+/*
+    Objects: List
+    ---
+    Small reusable object to remove default list styling from lists
+*/
+
+.o-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+/*------------------------------------*\
+  #COMPONENTS
+\*------------------------------------*/
+.c-logo {
+    /*pass*/
+}
+.c-logo__symbol {
+    height: 32px;
+}
+
+/*
+    Component: header
+    ---
+    Main header of the website
+*/
+
+.c-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-header__nav {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .c-header__logo,
+    .c-header__nav {
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+
+    .c-header__nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/*
+    Components: cta
+    ---
+    Styling of cta link
+*/
+
+.c-knop-cta {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 24px;
+    padding: 16px 32px;
+    background: linear-gradient(to right, #033AA7 0%, #0053FB 51%, #0053FB 100%);
+    border: 1px solid rgba(142, 199, 255, 0.2);
+    box-shadow: 0 0 10px rgba(142, 199, 255, 0.2);
+
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+
+.c-knop-cta,
+.c-knop-cta:visited,
+.c-knop-cta:active {
+    color: #DBEDFF;
+}
+
+.c-knop-cta:hover {
+    color: #fff;
+    background-position: right center;
+}
+
+/*------------------------------------*\
+  #UTILITIES
+\*------------------------------------*/
+
+/*
+    Utilities: color
+    ---
+    Utility classes to put specific colors onto elements
+*/
+
+.u-color-secondary-base {
+}
+
+/*
+    Utilities: spacing
+    ---
+    Utility classes to put specific margins and paddings onto elements
+*/
+
+.u-pt-clear {
+    padding-top: 0 !important;
+}
+
+.u-mb-clear {
+    margin-bottom: 0 !important;
+}
+
+.u-mb-xs {
+    margin-bottom: 4px !important;
+}
+
+.u-mb-sm {
+    margin-bottom: 8px !important;
+}
+
+.u-mb-md {
+    margin-bottom: 16px !important;
+}
+
+.u-mb-lg {
+    margin-bottom: 32px !important;
+}
+
+.u-mb-xl {
+    margin-bottom: 48px !important;
+}
+
+/*
+    Utilities: max-width
+    ---
+    Utility classes to put specific max widths onto elements
+*/
+
+.u-max-width-xs {
+    max-width: 18em !important;
+}
+
+.u-max-width-sm {
+    max-width: 32em !important;
+}
+
+.u-max-width-md {
+    max-width: 42em !important;
+}
+
+.u-max-width-lg {
+    max-width: 60em !important;
+}
+
+.u-max-width-xl {
+    max-width: 70em !important;
+}
+
+.u-max-width-none {
+    max-width: none !important;
+}
+
+/*
+    Utility: Flex
+    ---
+    Utility classes to put specific flex properties onto elements
+    Will be mostly used on o-layout__item
+*/
+
+.u-flex-basis-auto {
+    flex-basis: auto !important;
+}
+
+.u-flex-grow-1 {
+    flex-grow: 1 !important;
+}
+
+.u-1-of-2 {
+    flex-basis: calc(100% / 2) !important;
+}
+
+.u-1-of-3 {
+    flex-basis: calc(100% / 3) !important;
+}
+
+.u-2-of-3 {
+    flex-basis: calc(100% / 3 * 2) !important;
+}
+
+.u-1-of-4 {
+    flex-basis: calc(100% / 4) !important;
+}
+
+.u-3-of-4 {
+    flex-basis: calc(100% / 4 * 3) !important;
+}
+
+.u-1-of-5 {
+    flex-basis: calc(100% / 5) !important;
+}
+
+.u-2-of-5 {
+    flex-basis: calc(100% / 5 * 2) !important;
+}
+
+.u-3-of-5 {
+    flex-basis: calc(100% / 5 * 3) !important;
+}
+
+.u-4-of-5 {
+    flex-basis: calc(100% / 5 * 4) !important;
+}
+
+.u-1-of-6 {
+    flex-basis: calc(100% / 6) !important;
+}
+
+.u-5-of-6 {
+    flex-basis: calc(100% / 6 * 5) !important;
+}
+
+@media (min-width: 576px) {
+    .u-1-of-2-bp1 {
+        flex-basis: calc(100% / 2) !important;
+    }
+    .u-1-of-3-bp1 {
+        flex-basis: calc(100% / 3) !important;
+    }
+    .u-2-of-3-bp1 {
+        flex-basis: calc(100% / 3 * 2) !important;
+    }
+    .u-1-of-4-bp1 {
+        flex-basis: calc(100% / 4) !important;
+    }
+    .u-3-of-4-bp1 {
+        flex-basis: calc(100% / 4 * 3) !important;
+    }
+    .u-1-of-5-bp1 {
+        flex-basis: calc(100% / 5) !important;
+    }
+    .u-2-of-5-bp1 {
+        flex-basis: calc(100% / 5 * 2) !important;
+    }
+    .u-3-of-5-bp1 {
+        flex-basis: calc(100% / 5 * 3) !important;
+    }
+    .u-4-of-5-bp1 {
+        flex-basis: calc(100% / 5 * 4) !important;
+    }
+    .u-1-of-6-bp1 {
+        flex-basis: calc(100% / 6) !important;
+    }
+    .u-5-of-6-bp1 {
+        flex-basis: calc(100% / 6 * 5) !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .u-1-of-2-bp2 {
+        flex-basis: calc(100% / 2) !important;
+    }
+    .u-1-of-3-bp2 {
+        flex-basis: calc(100% / 3) !important;
+    }
+    .u-2-of-3-bp2 {
+        flex-basis: calc(100% / 3 * 2) !important;
+    }
+    .u-1-of-4-bp2 {
+        flex-basis: calc(100% / 4) !important;
+    }
+    .u-3-of-4-bp2 {
+        flex-basis: calc(100% / 4 * 3) !important;
+    }
+    .u-1-of-5-bp2 {
+        flex-basis: calc(100% / 5) !important;
+    }
+    .u-2-of-5-bp2 {
+        flex-basis: calc(100% / 5 * 2) !important;
+    }
+    .u-3-of-5-bp2 {
+        flex-basis: calc(100% / 5 * 3) !important;
+    }
+    .u-4-of-5-bp2 {
+        flex-basis: calc(100% / 5 * 4) !important;
+    }
+    .u-1-of-6-bp2 {
+        flex-basis: calc(100% / 6) !important;
+    }
+    .u-5-of-6-bp2 {
+        flex-basis: calc(100% / 6 * 5) !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .u-1-of-2-bp3 {
+        flex-basis: calc(100% / 2) !important;
+    }
+    .u-1-of-3-bp3 {
+        flex-basis: calc(100% / 3) !important;
+    }
+    .u-2-of-3-bp3 {
+        flex-basis: calc(100% / 3 * 2) !important;
+    }
+    .u-1-of-4-bp3 {
+        flex-basis: calc(100% / 4) !important;
+    }
+    .u-3-of-4-bp3 {
+        flex-basis: calc(100% / 4 * 3) !important;
+    }
+    .u-1-of-5-bp3 {
+        flex-basis: calc(100% / 5) !important;
+    }
+    .u-2-of-5-bp3 {
+        flex-basis: calc(100% / 5 * 2) !important;
+    }
+    .u-3-of-5-bp3 {
+        flex-basis: calc(100% / 5 * 3) !important;
+    }
+    .u-4-of-5-bp3 {
+        flex-basis: calc(100% / 5 * 4) !important;
+    }
+    .u-1-of-6-bp3 {
+        flex-basis: calc(100% / 6) !important;
+    }
+    .u-5-of-6-bp3 {
+        flex-basis: calc(100% / 6 * 5) !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .u-1-of-2-bp4 {
+        flex-basis: calc(100% / 2) !important;
+    }
+    .u-1-of-3-bp4 {
+        flex-basis: calc(100% / 3) !important;
+    }
+    .u-2-of-3-bp4 {
+        flex-basis: calc(100% / 3 * 2) !important;
+    }
+    .u-1-of-4-bp4 {
+        flex-basis: calc(100% / 4) !important;
+    }
+    .u-3-of-4-bp4 {
+        flex-basis: calc(100% / 4 * 3) !important;
+    }
+    .u-1-of-5-bp4 {
+        flex-basis: calc(100% / 5) !important;
+    }
+    .u-2-of-5-bp4 {
+        flex-basis: calc(100% / 5 * 2) !important;
+    }
+    .u-3-of-5-bp4 {
+        flex-basis: calc(100% / 5 * 3) !important;
+    }
+    .u-4-of-5-bp4 {
+        flex-basis: calc(100% / 5 * 4) !important;
+    }
+    .u-1-of-6-bp4 {
+        flex-basis: calc(100% / 6) !important;
+    }
+    .u-5-of-6-bp4 {
+        flex-basis: calc(100% / 6 * 5) !important;
+    }
+}
+
+/*------------------------------------*\
+  #MEDIA
+\*------------------------------------*/
+
+/*
+    Media Queries
+    ---
+    EXAMPLE Media Queries for Responsive Design.
+    These examples override the primary ('mobile first') styles.
+    USE THEM INLINE!
+*/
+
+/* Extra small devices (portrait phones, less than 576px)
+   No media query since this is the default in mobile first design
+*/
+
+/* Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+*/
+
+/* Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+*/
+
+/* Large devices (landscape tablets, desktops, 992px and up)
+@media (min-width: 992px) {}
+*/
+
+/* Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+*/
+
+/*
+    Print styles.
+    ---
+    Inlined to avoid the additional HTTP request:
+    http://www.phpied.com/delay-loading-your-print-css/
+*/
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
